@@ -1,0 +1,35 @@
+<!--each->if u want to get records from html elements as collection then we use each().
+syntax:var arr=["mohit","amitt"];
+$.each(collectionname,function(index,value))-->
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var obj={name:"ram",address:"lucknow",email:"dsfd@gmail.com"};
+			var str="";
+			var arr=["java","python","ruby on rails","c sharp"];
+			var arr1=""
+
+			//retrieval of values from object...
+
+			$.each(obj,function(i,val){
+				str+=i+":"+val+"<br>";
+				})
+			//retrieval of values from array....
+			$.each(arr,function(a,b){
+				arr1+="<b>"+(a+1)+":</b>"+b+"<br>";
+				})
+
+			$("p").html(str+arr1);
+			$
+			})
+	</script>
+</head>
+<body>
+records::--->
+<br><br>
+<p></p>
+</body>
+</html>

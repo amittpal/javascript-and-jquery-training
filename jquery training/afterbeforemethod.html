@@ -1,0 +1,32 @@
+<!--
+after() -> this method add any html control after html control.
+   syntax  -> $("selctor").after("control with syntax")
+   eg..:$("div").after("<p>add paragraph after div</p>");
+===========================================================================================
+
+before() -> this method add any html control before html control.
+===========================================================================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$("#d1").after("<h2>this is h2 tag which is added after div by jquery</h2>").slideToggle(1500);
+				})
+			$("#btn2").click(function(){
+				$("#d1").before("<h1>this is h1 tag which is added before div by jquery</h1>").slideToggle(1500);
+				})
+			})
+	</script>
+	<style type="text/css">
+		#d1{height: 300px;width: 500px;border: 5px solid yellowgreen;}
+	</style>
+</head>
+<body>
+	<div id="d1"><h2>this is a div box</h2></div><button id="btn" style="background-color: yellow;font-size: 25px">press here to add h2 tag after div box</button><button id="btn2" style="background-color: red;font-size: 25px">press this to add h1tag before div box</button>
+
+</body>
+</html>

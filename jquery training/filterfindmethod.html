@@ -1,0 +1,30 @@
+<!--
+find() ->it is used to find any element rom DOM.
+
+filter() ->
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("body").find("span").css("background","red");
+			})
+		$("#btn2").click(function(){
+			$("h2").filter("h2").css("background","blue");
+			})
+		})
+</script>
+</head>
+<body><center>
+	<button id="btn1">find</button><button id="btn2">filter</button>
+	<p>this is first paragraph</p>
+	<p><span  style="font-size: 25px;">this is second paragraph</span></p>
+	<h2>this is h2 tag and it is used by filter tag</h2>
+	<p>this third paragraph</p>
+</center>
+</body>
+</html>

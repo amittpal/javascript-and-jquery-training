@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var a=window.location.href;
+			a=a.substring(a.lastIndexOf('=')+1);
+			//a=a.replace(/am|_/g," ");
+			a=a.replace(/%20|_/g," ");
+		$("#pa").html(a);
+			})
+	</script>
+</head>
+<body>
+	<p id="pa"></p>
+</body>
+</html>

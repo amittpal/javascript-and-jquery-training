@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var num;
+			var arr=[1,2,3,4,5,6,7,8,9,10];
+			var tab="";
+			$("#btn").click(function(){
+				num=$("#txt").val();
+				$.each(arr,function(i,val){
+					tab+="table of "+num+" *"+val+"= "+num*val+"<br>";
+					})
+			$("#para").html(tab);
+			})
+			})
+	</script>
+</head>
+<body>
+	<input type="number" placeholder="enter a number" id="txt">
+	<button id="btn">press here</button><br>
+	<p id="para"></p>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+first() -> is used for finding the first element from DOM like as pasragraph or any div etc........
+synatx : $("selector").first();
+=====================================================================================
+
+last() -> it is used for finding last element of DOM from your selector.
+syntax : $("selector").last();
+=====================================================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("p").first().css("background","yellow").fadeToggle(3000);
+				})
+			$("#btn2").click(function(){
+				$("p").last().css({"border":"2px solid blue","height":"150px","width":"200px"})
+				})
+			})
+	</script>
+	<style type="text/css">
+		#p1{border: 5px solid red;height: 200px;width: 400px;}
+	</style>
+</head>
+<body>
+	<button id="btn1">first method</button><button id="btn2">last method</button>
+	<br>
+	<p id="p1">first</p>
+	<p>second</p>
+	<p>last</p>
+
+</body>
+</html>

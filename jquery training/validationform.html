@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+				$("#fname").keydown(function(e){
+					//alert(e.keyCode);
+					//e.keycode is used to find ASCII value of any key
+					//validation of name starts here
+					if((e.keyCode>=65&&e.keyCode<=90)||(e.keyCode>=97&&e.keyCode<=122)||(e.keyCode==8)||(e.keyCode==32))
+					{
+						$("#spmsg").html("right key press").fadeOut(1500);
+						$("#spmsg").css("color","green");
+						$("#fname").css("border","1px solid green");
+					}
+					else
+					{
+						$("#spmsg").html("wrong key press use only alphabets").fadeIn(1500);
+						$("#fname").css("border","1px solid red");
+						$("#spmsg").css("color","red");
+						e.preventDefault();
+					}
+					})
+				//close name validation
+				//starts mob validation
+				function chkmob()
+				{
+					var mob=$("#mob").val();
+					var status=true;
+					if(!((mob.charAt(0)==9)||(mob.charAt(0)==8)||(mob.charAt(0)==7)))
+					{
+						status=false;
+					}
+					return status;
+				}
+				//keydown method to check mob number
+				$("#mob").keydown(function(e){
+					if((e.keyCode>=48&&e.keyCode<=57)||e.keyCode==8)
+					{
+						e.preventDefault();
+					}
+					else
+					{
+						$("#spmsg").html("wrong mobile number pressed please use only number");
+						$("#spmsg").css("color","red");
+						e.preventDefault();
+					}
+					})
+				//keyup method to check mob no
+				$("#mob").attr("maxlength","10");
+				$("#mob").keyup(function(){
+					var chkmb=chkmob();
+					if(chkmb==true)
+					{
+						$("#spmsg").html("right key pressed");
+						$("#mob").css("color","green");
+						$("#spmsg").css("color","green");
+					}
+					else
+					{
+						$("#spmsg").html("wrong key pressed no starts with only 7 8 9 only");
+						$("#spmsg").css("color","red");
+						
+						//$("#mob").val("");
+					}
+					})
+				//close mob validation
+				//pic validation starts
+				$("#pic").change(function(){
+					var filex=$("#pic").val();
+					var extension=filex.substr(filex.lastIndexOf('.')+1);
+					var ext=extension.toLowerCase();
+					if(ext=="jpg"||ext=="jpeg"||ext=="png")
+					{
+						$("#spmsg").html("right photo format");
+						$("#spmsg").css("color","green");
+					}
+					else
+					{
+						$("#spmsg").html("wrong photo format");
+						$("#spmsg").css("background","red");
+
+					}
+					})
+			})
+	</script>
+</head>
+<body><center>
+	<form>
+		<table border="2" height="500px" width="600px">
+			<tr><td colspan="2"><center><h2>Enquiry Form</h2></center></td></tr>
+			<tr><td colspan="2"><center><span id="spmsg" style="font-size: 20px;">error message</span></center></td></tr>
+			<tr>
+				<td>name</td>
+				<td><input type="text" id="fname" placeholder="अपना नाम लिखो"></td>
+			</tr>
+			<tr>
+				<td>email</td>
+				<td><input type="text" id="em" placeholder="ईमेल डाले"></td>
+			</tr>
+			<tr><td>mobile number</td>
+				<td><input type="text" id="mob" placeholder="फ़ोन नंबर डाले"></td>
+			</tr>
+			<tr>
+				<td>profile picture</td>
+				<td><input type="file" id="pic" placeholder="अपना फोटो अपलोड करे"></td>
+			</tr>
+			<tr>
+				<td>check website url</td>
+				<td><input type="text" id="website" placeholder="अपना वेबसाइट दर्ज करे"></td>
+			</tr>
+			<tr><td colspan="2"><CENTER><input type="submit" id="sub" value="SUBMIT" style="height: 40px;width: 100px;background-color: yellowgreen;font-size: 23px;"></CENTER></td></tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		var obj=[{name:"amit kumar",address:"bareilly",age:"24yrs",phone:8630309556,course:"MCA",college:"FUTURE INSTITUTE OF ENGINEERIG AND TECHNOLOGY",rollno:11714300146},{name:"amit kumar",address:"bareilly",age:"24yrs",phone:8630309556,course:"MCA",college:"FUTURE INSTITUTE OF ENGINEERIG AND TECHNOLOGY",rollno:11714300146},{name:"amit kumar",address:"bareilly",age:"24yrs",phone:8630309556,course:"MCA",college:"FUTURE INSTITUTE OF ENGINEERIG AND TECHNOLOGY",rollno:11714300146},{name:"amit kumar",address:"bareilly",age:"24yrs",phone:8630309556,course:"MCA",college:"FUTURE INSTITUTE OF ENGINEERIG AND TECHNOLOGY",rollno:11714300146},{name:"amit kumar",address:"bareilly",age:"24yrs",phone:8630309556,course:"MCA",college:"FUTURE INSTITUTE OF ENGINEERIG AND TECHNOLOGY",rollno:11714300146}];
+
+		var tab="<table border='3'><tr><th>name</th><th>address</th><th>age</th><th>phone</th><th>course</th><th>roll number</th></tr>";
+
+		for(var i=0;i<obj.length;i++)
+		{
+		tab=tab+"<tr><td>"+obj[i].name+"</td><td>"+obj[i].address+"</td><td>"+obj[i].age+"</td><td>"+obj[i].phone+"</td><td>"+obj[i].course+"</td><td>"+obj[i].rollno+"</td></tr>";
+	}
+		tab=tab+"</table>";
+		$(document).ready(function(){
+			$("#d1").html(tab);
+			$("table tr").eq(0).css("background","red");
+			$("table tr").eq(1).css("background","yellow");
+			$("table tr").eq(2).css("background","blue");
+			$("table tr").eq(3).css("background","pink");
+			$("table tr").eq(4).css("background","yellowgreen");
+			$("table tr").eq(5).css("background","cyan");
+			$("table td").eq(1).css("background","cyan");
+			$("table td").eq(15).css("background","cyan");
+			})
+	</script>
+</head>
+<body><center>
+	<div id="d1"></div>
+</center>
+</body>
+</html>

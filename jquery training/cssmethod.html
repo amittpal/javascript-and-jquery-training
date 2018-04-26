@@ -1,0 +1,44 @@
+<!--
+animation in jquery:-
+we can animate any html control by using jquery for this act jquery provides some built in methods that is given below:
+
+css
+show
+hode
+toogle
+fadein
+fadeout
+
+
+
+css()>>it is used for decoration. we can apply single css and also multiple css properties but syntax is differ for both.
+
+syntax:single css:-$("#selector").css("propertyname","value");
+multiple css:-$("#selector").css({propertyname1:"value",property2:"value",.....});
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<style type="text/css">
+	#d1{height: 500px;width: 500px;background-color: red;border: 3px dotted blue;}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#b1").click(function(){
+		$("#d1").css("background-color","yellow");
+		})
+		$("#b2").click(function(){
+			$("#d1").css({"background-color":"blue","border-radius":"250px"});
+			})
+		})
+</script>
+</head>
+<body>
+	<div id="d1"></div><br>
+	<button id="b1">single css property</button>
+	<button id="b2">multiple css property</button>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+	#outer{height: 600px;width: 100%;border: 5px solid black;}
+		#d1{height: 200px;width: 100%;background: yellow;}
+		#d2{height: 400px;width: 100%;background: yellowgreen;display: none;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#spn").click(function(){
+				$("#d2").slideToggle(3000);
+				})
+			})
+	</script>
+</head>
+<body>
+	<div id="outer">
+	<div id="d1"><span style="font-size: 50px;">Educational qualifications :</span><span style="font-size: 60px;margin-left: 500px;cursor: pointer;" id="spn">+</span></div>
+	<div id="d2">high school number:</div>
+	</div>
+</body>
+</html>

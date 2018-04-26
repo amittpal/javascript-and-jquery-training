@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#chk1").change(function(){
+
+				var btn=$("#but").attr("disabled");				
+				if(btn=="disabled")
+				{
+					$("#but").attr("disabled",false);		
+					}
+					else
+					{
+						$("#but").attr("disabled",true);	
+						}	
+				})
+			})
+	</script>
+</head>
+<body>
+	<input type="checkbox" id="chk1">I agree with your <a href="#">terms and condition</a><br>
+	<button id="but" disabled>press here</button>
+
+</body>
+</html>

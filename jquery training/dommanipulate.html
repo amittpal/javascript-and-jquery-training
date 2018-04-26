@@ -1,0 +1,57 @@
+<!--
+dom manipulation or modification means to modify html elements by some jquery methods.
+eq->if u want to perform any action into html element then we can selecct as index of that element with help of eq().
+synatx:$("selector").eq(pass index of element);
+======================================================================================================================
+each->if u want to get records from html elements as collection then we use each().
+syntax:var arr=["mohit","amitt"];
+$.each(collectionname,function(index,value))
+======================================================================================================================
+remove
+empty
+removeAttr
+addClass
+removeClass
+hasClass
+after
+before
+append
+prepend
+first
+last
+find
+filter
+not
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("p").eq(3).css("background","red").slideUp(2000);
+		})
+</script>
+</head>
+<body>
+	<div id="outer">
+		<p>this is first paragraph</p>
+		<p>this is first paragraph</p>
+		<p>this is first paragraph</p>
+		<p>this is first paragraph</p>
+		<p>this is first paragraph</p>
+		<p>this is first paragraph</p>
+		<p>this is first paragraph</p>
+		<p>this is first paragraph</p><br><br>
+		<table border="3">
+			<tr><th>Sr.No</th><th>name</th><th>email</th><th>address</th></tr>
+			<tr><td>1</td><td>amitt</td><td>a@gmail.com</td><td>lucknow</td></tr>
+			<tr><td>1</td><td>amitt</td><td>a@gmail.com</td><td>lucknow</td></tr>
+			<tr><td>1</td><td>amitt</td><td>a@gmail.com</td><td>lucknow</td></tr>
+			<tr><td>1</td><td>amitt</td><td>a@gmail.com</td><td>lucknow</td></tr>
+		</table>
+	</div>
+
+</body>
+</html>

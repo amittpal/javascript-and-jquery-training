@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var data=$("#para").text();
+
+				//sending data of this page on qq.html
+
+				window.location.href="qq.html?pv="+data;
+				})
+			})
+	</script>
+</head>
+<body><center>
+	
+	<p id="para">15545     amit kumar</p><br>
+<button id="btn">press here</button>
+</center>
+</body>
+</html>

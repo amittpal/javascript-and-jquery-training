@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("img").toggleClass("flip");
+				})
+			})
+	</script>
+	<style type="text/css">
+		.flip{transform: rotate(180deg);border: 2px solid red;}
+	</style>
+</head>
+<body><center>
+	<img src="img/6.jpg" alt=""><br><br>
+	<button style="font-size: 25px;background-color: yellow;border: 2px solid red;">rotate image</button>
+</center>
+</body>
+</html>

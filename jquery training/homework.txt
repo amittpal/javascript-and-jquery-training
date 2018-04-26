@@ -1,0 +1,4 @@
+task1-> develop menu by using jquery, frist bind all menu name into dropdown
+list when user select menu name then that menu automatic add into li and 
+display menus as horizontal format.
+=======================================================

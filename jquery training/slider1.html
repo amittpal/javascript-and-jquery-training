@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#outer{height: 350px;width: 800px;border: 3px solid red;}
+	</style>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script>
+		var photo=["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg"];
+		count=0;
+		var count1=0;
+		function demo()
+			{
+				$("#pic").attr("src",photo[count]);
+				count++;
+				count1=count;
+				if(count==photo.length)
+				{
+					count=0;
+				}
+
+			}
+		$(document).ready(function(){
+			window.setInterval(demo,3000);
+			$("#sp1").click(function(){
+				alert("cncv");
+				})
+			$("#sp2").click(function(){
+				alert("cncv");
+				})
+			})
+	</script>
+	
+</head>
+<body><center>
+	<div id="outer"><img src="img/1.jpg" alt="not available" id="pic"/></div>
+	<span style="position: absolute;height: 150px;width: 100px;font-size: 60px;top: 150px;right: 300px;cursor: pointer;"  id="sp1">>></span><span style="position: absolute;height: 150px;width: 100px;font-size: 60px;top: 150px;left: 300px;cursor: pointer;" id="sp2"><<</span>
+</center>
+</body>
+</html>

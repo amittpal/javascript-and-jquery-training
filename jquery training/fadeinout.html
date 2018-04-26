@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+show() method :-syntax:-$("#selector").show("time in milisecond"); 
+hide()  syntax:-$("#selector").hide("time in milisecond");
+toggle() syntax:-$("#selector").toggle();
+-->
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#b1").click(function(){
+				$("#pic").fadeIn(3000);
+				
+			})
+			$("#b2").click(function(){
+				$("#pic").fadeOut(3000);
+				
+			})
+			$("#b3").click(function(){
+				$("#pic").fadeToggle(3000);
+				
+			})
+			$("#b4").click(function(){
+				$("#pic").slideDown(3000);
+				
+			})
+			$("#b5").click(function(){
+				$("#pic").slideUp(3000);
+				
+			})
+			$("#b6").click(function(){
+				$("#pic").slideToggle(3000);
+				
+			})
+			 })
+	</script>
+</head>
+<body>
+	<img src="img/3.jpg" alt="nahi hai photo" height="300px" width="400px" style="display: none;" id="pic" /><br><br>
+	<button id="b1">fadein</button>
+	<button id="b2">fadeout</button>
+	<button id="b3">fade toggle</button>
+	<button id="b4">slide down</button>
+	<button id="b5">slide up</button>
+	<button id="b6">slide toggle</button>
+	
+
+</body>
+</html>

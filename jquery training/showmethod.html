@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+show() method :-syntax:-$("#selector").show("time in milisecond"); 
+hide()  syntax:-$("#selector").hide("time in milisecond");
+toggle() syntax:-$("#selector").toggle();
+-->
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#b1").click(function(){
+				$("#pic").show(3000);
+				$("#pic").css("border","25px solid black");
+				})
+			$("#b2").click(function(){
+				$("#pic").hide("medium");
+				})
+			$("#b3").click(function(){
+				$("#pic").toggle(2000);
+				})
+			})
+	</script>
+</head>
+<body>
+	<img src="img/bcci.png" alt="" height="300px" width="400px" style="display: none;" id="pic" /><br><br>
+	<button id="b1">show</button>
+	<button id="b2">hide</button>
+	<button id="b3">toggle</button>
+
+</body>
+</html>

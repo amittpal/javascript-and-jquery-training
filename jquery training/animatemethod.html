@@ -1,0 +1,27 @@
+<!--
+animate method is used for animation into html control have multiple property with effects.
+syntax.>>$("selector").animate({property:value,.........},delay in milisecond)
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#outer{height: 600px;width: 1000px;border: 5px solid black;position: relative;margin: 0px auto;}
+		img{height: 100px;position: absolute;}
+	</style>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("img").click(function(){
+				$("img").animate({right:"800px"},3000);
+				$("img").animate({top:"20px"},2000);
+				})
+			})
+	</script>
+</head>
+<body>
+	<div id="outer"><img src="img/6.jpg" alt=""></div>
+
+</body>
+</html>

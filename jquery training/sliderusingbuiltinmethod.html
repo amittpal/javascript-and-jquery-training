@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		var photo=["img/2.jpg","img/3.jpg","img/4.jpg"];
+		count=0;
+		function demo(){
+			document.getElementById("pic").src=photo[count];
+			count++;
+			if(count==photo.length)
+			{
+				count=0;
+			}
+			window.setTimeout("demo()",1500);		
+		}
+		$(document).ready(function(){
+			demo();
+			})
+	</script>
+	<style type="text/css">
+		#outer{height: 351px;width: 801px;border: 4px dotted blue;margin: 0px auto;}
+	</style>
+</head>
+<body>
+	<div id="outer"><img src="img/1.jpg" alt="pic not available" id="pic"></div>
+
+</body>
+</html>

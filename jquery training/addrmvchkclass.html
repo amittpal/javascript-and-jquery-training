@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.c1{height: 300px;width: 300px;background: red;float: left;}
+		.c2{height: 300px;width: 300px;background: yellowgreen;float: left;margin-left: 50px;}
+		.p1{height: 600px;width: 500px;background: green;float: left;}
+	</style>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var a=$("#d1").hasClass("c1");
+		alert(a);
+		if(a==true)
+		{			
+			$("#d1").removeClass("c1");
+		}
+		var pq=confirm("do u want to ad another class in div 1");
+		if(pq==true)
+		{
+			$("#d1").addClass("p1");
+		}
+		
+		})
+</script>
+</head>
+<body>
+<div class="c1" id="d1"><h1>this div1</h1></div>
+<div class="c2"><h3>div 2</h3></div>
+
+</body>
+</html>
