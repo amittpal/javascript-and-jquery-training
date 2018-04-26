@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>String</title>
+<script type="text/JavaScript" language="JavaScript">
+function validate(){
+var str=f1.eml.value;
+var v1=str.indexOf("@");
+var v2=str.lastIndexOf(".");
+alert(v1);
+alert(v2);
+if(v1<1 || v2<v1+2 || v2+2>=str.length){
+alert("invalid email id");
+}
+else{
+alert("Your email id is correct");
+}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Email:<input type="text" name="eml"><br><br>
+<input type="button" value="Click me" name="b1" OnClick="validate();"><br><br>
+</form>
+</body>
+</html>

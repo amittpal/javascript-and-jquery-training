@@ -1,0 +1,30 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+function getFull(){
+var fnm=f1.fnm.value;
+var mnm=f1.mnm.value;
+var lnm=f1.lnm.value;
+//alert(fnm.length);
+//if(fnm=="")
+if(fnm.length==0)
+alert("Enter First Name");
+else if(mnm=="")
+alert("Enter Middle Name");
+else if(lnm=="")
+alert("Enter Last Name");
+else
+f1.fullnm.value=fnm+" "+mnm+" "+lnm;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+First Name:<input type="text" name="fnm"><br><br>
+Middile Name:<input type="text" name="mnm"><br><br>
+Last Name:<input type="text" name="lnm"><br><br>
+<input type="button" value="Get Full Name" onClick="getFull();"><br><br>
+<input type="text" name="fullnm"><br><br>
+</form>
+</body>
+</html>

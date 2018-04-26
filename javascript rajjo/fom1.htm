@@ -1,0 +1,65 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+function save(){
+		  if(f1.nm.value=="")
+		  {
+		    alert("Enter your name");
+		    f1.nm.focus();
+		  }
+		  else if(f1.add.value=="")
+		  {
+		    alert("Enter your address");
+		    f1.addr.focus();
+		  }
+		  else if(f1.cty.value=="-SELECT CITY-")
+		  {
+		    alert("Enter your city");
+		    f1.email.focus();
+		  }
+		  else if(f1.gen.value=="")
+		  {
+		    alert("Enter your gender");
+		    f1.gen.focus();
+		  }
+		  else{
+		    var v=window.open("");
+			v.document.write(f1.nm.value+"<br>");
+			v.document.write(f1.add.value+"<br>");
+			v.document.write(f1.cty.value+"<br>");
+			v.document.write(f1.gen.value);
+		  }
+}
+</script>
+</head>
+<body>
+<p align="center">Registration Form</p>
+<p>
+<form action="" method="post" name="f1">
+<table border="0" align="center">
+<tr><td>Name:</td><td>
+<input type="text" name="nm">
+</td></tr>
+<tr><td>Address:</td><td><textarea name="add"></textarea></td></tr>
+<tr><td>City:</td><td><select name="cty">
+<option>-SELECT CITY-</option>
+<option value="1" >Alld</option>
+<option value="2" >LKO</option>
+<option value="3">KNP</option>
+<option value="4">VNS</option>
+</select></td></tr>
+<tr><td>Gender:</td><td> 
+Male<input type="radio" name="gen" value="M">
+Fe Male<input type="radio" name="gen" value="F"></td></tr>
+<tr><td>Hobbies:</td><td>
+A<input type="checkbox" name="hob1" value="A">
+B<input type="checkbox" name="hob2"  value="B">
+C<input type="checkbox" name="hob3"  value="C">
+D<input type="checkbox" name="hob4"  value="D"></td></tr>
+<input type="button" value="Save" onClick="save();">
+</td></tr>
+</table>
+</form>
+</p>
+</body>
+</html>

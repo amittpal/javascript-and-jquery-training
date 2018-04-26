@@ -1,0 +1,71 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+function getFull(){
+var fnm=f1.fnm.value;
+var mnm=f1.mnm.value;
+var lnm=f1.lnm.value;
+var msg="";
+var flg="";
+if(fnm==""){
+flg=flg+"1";
+msg=msg+" Enter First Name\n";
+}
+else if(fnm.length<3){
+flg=flg+"1";
+msg=msg+" First Name should have atleast 3 Chars \n";
+}
+if(mnm==""){
+flg=flg+"2";
+msg=msg+" Enter Middle Name\n";
+}
+else if(mnm.length<3){
+flg=flg+"2";
+msg=msg+" Middle Name should have atleast 3 Chars \n";
+}
+if(lnm==""){
+flg=flg+"3";
+msg=msg+" Enter Last Name\n";
+}
+else if(lnm.length<3){
+flg=flg+"3";
+msg=msg+" Last Name should have atleast 3 Chars \n";
+}
+if(msg==""){
+var chk=confirm("Are sure want to display full name");
+if(chk){
+f1.fullnm.value=fnm+" "+mnm+" "+lnm;
+}
+}
+else{
+alert(msg);
+for(i=0;i<flg.length;i++){
+f=0;
+switch(flg.charAt(i)){
+case '1': f1.fnm.focus();
+	f=1;
+	break;
+case '2': f1.mnm.focus();
+	f=1;
+	break;
+case '3': f1.lnm.focus();
+	f=1;
+	break;
+}
+if(f==1)
+break;
+}
+}
+}
+</script>
+</head>
+<body>
+<form name="f1" action="lo.htm">
+First Name:<input type="text" name="fnm"><br><br>
+Middile Name:<input type="text" name="mnm"><br><br>
+Last Name:<input type="text" name="lnm"><br><br>
+<input type="button" value="Get Full Name" onClick="getFull();"><br><br>
+<input type="text" name="fullnm"><br><br>
+</form>
+</body>
+</html>

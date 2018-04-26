@@ -1,0 +1,41 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+function getFull(){
+var fnm=f1.fnm.value;
+var mnm=f1.mnm.value;
+var lnm=f1.lnm.value;
+//alert(fnm.length);
+//if(fnm=="")
+if(fnm=="")
+alert("Enter First Name");
+else if(fnm.length<3)
+alert("First name should be more than three character");
+else if(mnm=="")
+alert("Enter Middle Name");
+else if(mnm.length<3)
+alert("Middle name should be more than three character");
+else if(lnm=="")
+alert("Enter Last Name");
+else if(lnm.length<3)
+alert("Last name should be more than three character");
+else if(f1.mbl.value.length!=10)
+alert("Mobile Number is Not Correct It is of 10 digit");
+else if(isNaN(f1.mbl.value))
+alert("Mobile Number should be in digit only");
+else
+f1.fullnm.value=fnm+" "+mnm+" "+lnm;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+First Name:<input type="text" name="fnm"><br><br>
+Middle Name:<input type="text" name="mnm"><br><br>
+Last Name:<input type="text" name="lnm"><br><br>
+Mobile Number:<input type="text" name="mbl"><br><br>
+<input type="button" value="Get Full Name" onClick="getFull();"><br><br>
+<input type="text" name="fullnm"><br><br>
+</form>
+</body>
+</html>

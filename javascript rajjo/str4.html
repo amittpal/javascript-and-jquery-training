@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>String</title>
+<script type="text/JavaScript" language="JavaScript">
+function validate(){
+if(!f1.str.value.match(/^[a-zA-Z]+$/) && f1.str.value!=""){
+f1.str.value="";
+alert("Please Enter only alphabets in text");
+f1.str.focus();
+}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter a String:<input type="text" name="str" onkeyup="validate();"><br><br>
+</form>
+</body>
+</html>

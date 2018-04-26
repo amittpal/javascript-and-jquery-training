@@ -1,0 +1,43 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+var i=0,j=0,k=0;
+function test(){
+if(i==60){
+i=0;
+j++;
+}
+if(j==60){
+j=0;
+k++;
+}
+if(k==12){
+k=0;
+}
+i++;
+if(i<10 && j<10 && k<10)
+f1.tm.value="0"+k+":"+"0"+j+":"+"0"+i;
+else if(i<10 && j<10)
+f1.tm.value=k+":"+"0"+j+":"+"0"+i;
+else if(j<10 && k<10)
+f1.tm.value="0"+k+":"+"0"+j+":"+i;
+else if(i<10 && k<10)
+f1.tm.value="0"+k+":"+j+":"+"0"+i;
+else if(i<10)
+f1.tm.value=k+":"+j+":"+"0"+i;
+else if(j<10)
+f1.tm.value=k+":"+"0"+j+":"+i;
+else if(k<10)
+f1.tm.value="0"+k+":"+j+":"+i;
+else
+f1.tm.value=k+":"+j+":"+i;
+}
+setInterval('test()',1000);
+</script>
+<body>
+<p align="center">My Digital Watch</p>
+<form name="f1" align="center">
+<input type="text" value="Time is:">
+<input type="text" name="tm">
+</form>
+</body>
+</html>

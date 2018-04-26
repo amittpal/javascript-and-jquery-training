@@ -1,0 +1,34 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+var i=0,j=0,k=0;
+function test(){
+if(i==60){
+i=0;
+j++;
+}
+if(j==60){
+j=0;
+k++;
+}
+if(k==12){
+k=0;
+}
+f1.sc.value=i;
+i++;
+f1.mn.value=j;
+f1.hr.value=k;
+}
+setInterval('test()',1000);
+</script>
+<body>
+<p align="center">My Digital Watch</p>
+<form name="f1" align="center">
+<input type="text" value="Hour">
+<input type="text" value="Minute">
+<input type="text" value="Second"><br>
+<input type="text" name="hr">
+<input type="text" name="mn">
+<input type="text" name="sc">
+</form>
+</body>
+</html>

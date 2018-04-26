@@ -1,0 +1,29 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+var i=0;
+function test(){
+f1.tm.value=i;
+i++;
+if(i==60)
+location.href="P2.htm"
+}
+var v=setInterval('test()',1000);
+function Ans(){
+if(f1.A1.value==1 || f1.A1.value==2 || f1.A1.value==3)
+alert("Your Answer is not Correct");
+if(f1.A1.value==4)
+alert("Your Answer is Correct");
+location.href="P2.htm"
+}
+</script>
+<body>
+<form name="f1">
+<p align="center"><b>Online Test</b></p><p align="right"><input type="text" name="tm"></p>
+Q1. In addition and subtraction of two integers , sign of the answer depends upon <br>
+<input type="radio" name="A1" Value="1" onClick="Ans();">Smaller number<br>
+<input type="radio" name="A1" Value="2" onClick="Ans();">Their difference<br>
+<input type="radio" name="A1" Value="3" onClick="Ans();">Their sum<br>
+<input type="radio" name="A1" Value="4" onClick="Ans();">Greater numerical value <br>
+</form>
+</body>
+</html>

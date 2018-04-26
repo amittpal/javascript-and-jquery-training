@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>String</title>
+<script type="text/JavaScript" language="JavaScript">
+function vowel(){
+var str=f1.str.value;
+var len=str.length;
+var cnt=0;
+for(var i=0;i<len;i++){
+if(str.charAt(i)=="a" || str.charAt(i)=="e" || str.charAt(i)=="i" || str.charAt(i)=="o" || str.charAt(i)=="u" || str.charAt(i)=="A" ||str.charAt(i)=="E" ||str.charAt(i)=="I" ||str.charAt(i)=="O" ||str.charAt(i)=="U")
+cnt++;
+}
+f1.vwl.value=cnt;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter a String:<input type="text" name="str"><br><br>
+<input type="button" value="Click me" name="b1" OnClick="vowel();"><br><br>
+<input type="text" name="vwl"> 
+</form>
+</body>
+</html>

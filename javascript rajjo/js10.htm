@@ -1,0 +1,109 @@
+<html>
+<head>
+	<script type="text/JavaScript" language="JavaScript">
+		function validate()
+		{
+		var nm=f1.nm.value;
+		var fnm=f1.fnm.value;
+		var mnm=f1.mnm.value;
+		var mbl=f1.mbl.value;
+		var addr=f1.addr.value;
+		var email=f1.email.value;
+		var gen=f1.gen.value;
+		  if(nm=="")
+		  {
+		    alert("Enter your name");
+		    f1.nm.focus();
+		  }
+		  else if(fnm=="")
+		  {
+		    alert("Enter your father name");
+		    f1.fnm.focus();
+		  }
+		  else if(mnm=="")
+		  {
+		    alert("Enter your mother name");
+		    f1.mnm.focus();
+		  }
+		  else if(mbl=="")
+		  {
+		    alert("Enter your mobile number");
+		    f1.mbl.focus();
+		  }
+		  else if(isNaN(mbl))
+		  {
+		    alert("Mobile number should be in numbers only");
+		    f1.mbl.focus();
+		  }
+		  else if(mbl.length!=10)
+		  {
+		    alert("Mobile Number is not correct");
+		    f1.mbl.focus();
+		  }
+		  else if(addr=="")
+		  {
+		    alert("Enter your address");
+		    f1.addr.focus();
+		  }
+		  else if(email=="")
+		  {
+		    alert("Enter your email id");
+		    f1.email.focus();
+		  }
+		  else if(gen=="")
+		  {
+		    alert("Enter your gender");
+		  }
+		 else
+		 {
+		  alert(nm+" "+fnm+" "+mnm+" "+mbl+" "+addr+" "+email+" "+gen);
+		 }
+		}
+	</script>
+</head>
+<body bgcolor="#cccccc">
+     <form name="f1" method="post" action="">
+	<table border="0" width="100%" height="98%" cellspacing="0" cellpadding="0">
+		<tr>
+			<th align="right">Name</th>
+			<th>:</th>
+			<td><input type="text" name="nm" placeholder="Enter your name"></td>
+		</tr>
+		<tr>
+			<th align="right">Father Name</th>
+			<th>:</th>
+			<td><input type="text" name="fnm" placeholder="Enter your Father name"></td>
+		</tr>
+		<tr>
+			<th align="right">Mother Name</th>
+			<th>:</th>
+			<td><input type="text" name="mnm" placeholder="Enter your Mother name"></td>
+		</tr>
+		<tr>
+			<th align="right">Mobile</th>
+			<th>:</th>
+			<td><input type="text" name="mbl" placeholder="Enter your mbl number"></td>
+		</tr>
+		<tr>
+			<th align="right">Address</th>
+			<th>:</th>
+			<td><textarea rows="3" cols="20" name="addr"></textarea></td>
+		</tr>
+		<tr>
+			<th align="right">Email Id</th>
+			<th>:</th>
+			<td><input type="text" name="email" placeholder="Enter your email"></td>
+		</tr>
+		<tr>
+			<th align="right">Gender</th>
+			<th>:</th>
+			<td><input type="radio" name="gen" value="1">Male<input type="radio" name="gen" value="2">Female</td>
+		</tr>
+		<tr>
+			<td align="right" colspan="2"><input type="button" name="b1" value="Submit" onClick="validate();"></td>
+			<td></td>
+		</tr>
+	</table>
+     </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+        Compound Intrest Calculator
+        </title>
+        <script>
+        function calculate(){
+            var preValue=frm.preValue.value;
+            var intRate=frm.intRate.value;
+            var year=frm.year.value;
+            var futValue=Math.round(preValue*(Math.pow((1+intRate/100),year)));
+            var totalInt=Math.round((preValue*(Math.pow((1+intRate/100),year))-preValue))   ;
+            frm.totalInt.value=totalInt;
+            frm.futValue.value=futValue;
+            return;
+        }
+        </script>
+    </head>
+    <body>
+    <h1>Compound Intrest calculator</h1>
+        <form name="frm">
+        <pre>
+        Principal:           <input type="text" name="preValue"/><br/><br/>
+        Interest rate:       <input type="text" name="intRate"/><br/><br/>
+        Year of compounding: <input type="text" name="year"/><br/><br/>
+            <input type="button" name="calc" value="calculate" onclick="calculate()"/><br/><br/>
+        </pre>
+        Total intrest:       <input type="text" name="totalInt"/><br/><br/>
+        Future value:        <input type="text" name="futValue"/><br/>
+        </form>
+    </body>
+</html>
