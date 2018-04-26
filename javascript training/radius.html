@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	function crclearea(){
+		var t=Number(document.getElementById('txt').value);
+	var c={rad:t,area:function()
+		{
+			var res=3.14*this.rad*this.rad;
+			return res;
+		}};
+		
+		var r=c.area();
+		alert("area of radius = "+r.toFixed(5));
+	}
+</script>
+<body>
+	<input type="text" id="txt">
+	<input type="button" value="calculate radius" onclick="crclearea()">
+	
+</body>

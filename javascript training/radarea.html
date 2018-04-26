@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var a=Number(document.getElementById('rad').value);
+			var b=3.14*a*a;
+			var c=2*3.14*a;
+			document.getElementById('area').value=b.toFixed(3);
+			document.getElementById('pm').value=c.toFixed(3);
+		}
+
+	</script>
+</head>
+<body>
+	enter radius : <input type="number" id="rad" placeholder="radius"><br><br>
+	<input type="button" value="press here" onclick="demo()"><br><br>
+	area = <input type="number" id="area"><br><br>
+	perimeter = <input type="number" id="pm">
+
+</body>
+</html>

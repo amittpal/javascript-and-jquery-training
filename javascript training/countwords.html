@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo() {
+			var t=document.getElementById('txt').value;
+			var a=1;
+
+		for (var i = 0; i < t.length; i++)
+		 {
+			if (t[i]==" ") {
+				a++;
+			}
+
+		}
+		alert(a);
+		}
+
+	</script>
+</head>
+<body>
+	<textarea id="txt" placeholder="enter a senetence" rows="20" cols="80"></textarea><br><br>
+	<input type="button" value="press here" onclick="demo()">
+
+</body>
+</html>

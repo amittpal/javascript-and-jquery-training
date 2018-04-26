@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var im=document.getElementById("bulb");
+			var btn=document.getElementById("btn");
+			if(btn.value=="ON")
+			{
+				im.src="amitpic.jpg";
+				btn.value="OFF";
+			}
+			else
+			{
+				im.src="img.jpg";
+				btn.value="ON";
+			}
+
+		}
+	</script>
+	
+</head>	
+<body>
+	<img src="img.jpg" id="bulb"><br>
+	<input type="button" onclick="demo()" value="ON" id="btn">
+
+</body>
+</html>

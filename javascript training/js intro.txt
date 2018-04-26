@@ -1,0 +1,9 @@
+javascript is interpreted prog. language.
+it is object based language.
+it is created by netscape corporation in 1995 by Brendon fich.
+
+
+it is cross browser support
+dom traversing
+dom manipulation
+event handling

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var t=document.getElementById('txt').value;
+			var count=0;
+			for(var i=0;i<t.length;i++)
+			{
+				if (t[i]=="a") {
+					count++;
+				}
+				if (t[i]=="e") {
+					count++;
+				}
+				if (t[i]=="i") {
+					count++;
+				}
+				if (t[i]=="o") {
+					count++;
+				}
+				if (t[i]=="u") {
+					count++;
+				}
+
+
+			}
+			alert("number of vowels ="+count);
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<textarea id="txt" placeholder="enter a sentence to calculate number of vowels" rows="20" cols="80"></textarea><br><br>
+		<input type="button" value="press here" onclick="demo()">
+	</form>
+</body>
+</html>

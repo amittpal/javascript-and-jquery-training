@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function add()
+		{
+			var a,b,c,d,e;
+			a=parseInt(document.getElementById("fno").value);
+			b=parseInt(document.getElementById("sno").value);
+			c=a+b;
+			document.getElementById("p").innerHTML="sum ="+c;
+		}
+		function sub()
+		{
+			var a,b,c,d,e;
+			a=parseInt(document.getElementById("fno").value);
+			b=parseInt(document.getElementById("sno").value);
+			c=a-b;
+			document.getElementById("p").innerHTML="subtraction ="+c;
+		}
+		function mul()
+		{
+			var a,b,c,d,e;
+			a=parseInt(document.getElementById("fno").value);
+			b=parseInt(document.getElementById("sno").value);
+			c=a*b;
+			document.getElementById("p").innerHTML="multiplication ="+c;
+		}
+		function div()
+		{
+			var a,b,c,d,e;
+			a=parseInt(document.getElementById("fno").value);
+			b=parseInt(document.getElementById("sno").value);
+			c=a/b;
+			document.getElementById("p").innerHTML="division ="+c;
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="fno">enter first number<br>
+	<input type="number" id="sno">enter second number<br>
+	<button onclick="add()">add</button><button onclick="sub()">sbtract</button><button onclick="mul()">multiply</button>
+	<button onclick="div()">divide</button><br>
+	<p id="p"></p>
+
+</body>
+</html>

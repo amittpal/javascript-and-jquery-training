@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slider</title>
+	<script type="text/javascript">
+		var texts=["softpro india","varanasi","lucknow"];
+		var index=0;
+		function mvtxt()
+		{
+			document.getElementById('slider').innerHTML=texts[index];
+			index++;
+			if(index==texts.length)
+			{
+				index=0;
+			}
+			window.setTimeout("mvtxt()",1500);
+		}
+		
+	</script>
+</head>
+<body onload="mvtxt();">
+	<div id="slider" style="background: blue;color: white;border: 2px dotted red;text-align: center;font-size: 60px;padding: 6px;height: 100px;width: 800px;margin: 0px auto;">AMITT </div>
+
+</body>
+</html>

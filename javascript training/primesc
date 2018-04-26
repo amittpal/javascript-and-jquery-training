@@ -1,0 +1,23 @@
+function demo() {
+	var unum = Number(document.getElementById('txt').value);
+	class primenumber {
+		constructor(p) {
+			this.num = p;
+		}
+		prime() {
+			var a = this.num;
+			if (a / 2 !== 0) {
+				ares = "this is prime number";
+			} else if (a == 0) {
+				ares = "inavlid number";
+			} else {
+				ares = "not a prime number";
+			}
+			return ares;
+		}
+
+	}
+	var obj = new primenumber(unum);
+	var fres = obj.prime();
+	document.getElementById('para').innerHTML = "<h1>" + fres + "</h2>";
+}

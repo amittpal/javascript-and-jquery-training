@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function table()
+		{
+			var a,b,c;
+			a=parseInt(document.getElementById("no").value);
+			
+			document.getElementById("a").innerHTML=a+"*1 ="+a*1;
+			document.getElementById("b").innerHTML=a+"*2 ="+a*2;
+			document.getElementById("c").innerHTML=a+"*3 ="+a*3;
+			document.getElementById("d").innerHTML=a+"*4 ="+a*4;
+			document.getElementById("e").innerHTML=a+"*5 ="+a*5;
+			document.getElementById("f").innerHTML=a+"*6 ="+a*6;
+			document.getElementById("g").innerHTML=a+"*7 ="+a*7;
+			document.getElementById("h").innerHTML=a+"*8 ="+a*8;
+			document.getElementById("i").innerHTML=a+"*9 ="+a*9;
+			document.getElementById("j").innerHTML=a+"*10 ="+a*10;	
+
+			document.getElementById("t1").innerHTML=a+"*1 ="+a*1;
+			document.getElementById("t2").innerHTML=a+"*2 ="+a*2;
+			document.getElementById("t3").innerHTML=a+"*3 ="+a*3;
+			document.getElementById("t4").innerHTML=a+"*4 ="+a*4;
+			document.getElementById("t5").innerHTML=a+"*5 ="+a*5;
+			document.getElementById("t6").innerHTML=a+"*6 ="+a*6;
+			document.getElementById("t7").innerHTML=a+"*7 ="+a*7;
+			document.getElementById("t8").innerHTML=a+"*8 ="+a*8;
+			document.getElementById("t9").innerHTML=a+"*9 ="+a*9;
+			document.getElementById("t10").innerHTML=a+"*10 ="+a*10;			
+		}
+	</script>
+	<style type="text/css">
+		#outer{height: 300px;width: 300px;border: 1px solid black;float: left;}
+		#txt{height: 350px;width: 300px;border: 1px solid red;float: right;}
+	</style>
+</head>
+<body>
+	<input type="number" id="no">enter a number for its table<br><br>
+	<button onclick="table()">print table</button><br>
+	<div id="outer"><h3>this is div tag</h3>
+
+	<div id="a"></div>
+	<div id="b"></div>
+	<div id="c"></div>
+	<div id="d"></div>
+	<div id="e"></div>
+	<div id="f"></div>
+	<div id="g"></div>
+	<div id="h"></div>
+	<div id="i"></div>
+	<div id="j"><br>
+	</div>
+	</div><br>
+
+	<div id="txt"><h >this is text area</h4><br>
+	<textarea id="t1" rows="1" cols="5"></textarea><br>
+	<textarea id="t2" rows="1" cols="5"></textarea><br>
+	<textarea id="t3" rows="1" cols="5"></textarea><br>
+	<textarea id="t4" rows="1" cols="5"></textarea><br>
+	<textarea id="t5" rows="1" cols="5"></textarea><br>
+	<textarea id="t6" rows="1" cols="5"></textarea><br>
+	<textarea id="t7" rows="1" cols="5"></textarea><br>
+	<textarea id="t8" rows="1" cols="5"></textarea><br>
+	<textarea id="t9" rows="1" cols="5"></textarea><br>
+	<textarea id="t10" rows="1" cols=6"></textarea><br>
+	</div>
+</body>
+</html>

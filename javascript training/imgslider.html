@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#dv{height: 380px;width: 800px;border: 3px solid white;box-shadow: 300px red;}
+	</style>
+	<script type="text/javascript">
+		var imageadd=["img/1.jpg","img/2.jpg","img/4.jpg","img/5.jpg",]
+		var count=0;
+		
+		function demo()
+		{
+
+			document.getElementById('im').src=imageadd[count];
+			count++;
+			
+			if(count==imageadd.length)
+			{
+				count=0;
+			}
+			window.setTimeout("demo()",1500);
+		}
+		function red1()
+			{
+				
+				
+				document.getElementById('dv').style="border:10px solid red;";
+			}
+			function green1()
+			{
+				
+				
+				document.getElementById('dv').style="border:10px solid green;";
+			}
+			function bl()
+			{
+				
+				
+				document.getElementById('dv').style="border:10px solid black;";
+			}
+			function pi()
+			{
+				
+				
+				document.getElementById('dv').style="border:10px solid pink;";
+			}
+		
+	</script>
+</head>
+<body bgcolor="yellowgreen" onload="demo();"><center>
+	<div id="dv">
+		<img src="img/3.jpg" id="im">
+		<button style="border-radius: 20px;" onclick="red1()">red</button>
+		<button style="border-radius: 20px;" onclick="green1()">green</button>
+		<button style="border-radius: 20px;" onclick="bl()">black</button>
+		<button style="border-radius: 20px;" onclick="pi()">pink</button>
+	</div>
+</center>
+</body>
+</html>

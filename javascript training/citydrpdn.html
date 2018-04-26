@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var a=document.getElementById('s1').value;
+			var upcity=["varansi","lucknow","allahabad","kanpur","bareilly","chanduli"];
+			var mpcity=["mp1","mp2","rewa","mp9","mp55666","mp35453"];
+			var maha=["mumbai","solapur","belapur","bhandup","thane","bandra"];
+			var raj=["bikaner","jaipur","raj53465","raj878632","raj545345","chanduli"];
+			var ker=["banguluru","keral6546+","ker5465","hgj","545646ra","varansi"];
+			var tamil=["chennai","chennai5345","chennai5345","chnnaijee","hgjhhj","654sgysg"];
+			var sl="<select>";
+			if(a=='uttarpradesh')
+			{
+				sl=sl+"<option>"+upcity[0]+"</option><option>"+upcity[1]+"</option><option>"+upcity[2]+"</option><option>"+upcity[3]+"</option><option>"+upcity[4]+"</option><option>"+upcity[5]+"</option>";	
+			}
+			else if(a=='madhyapradesh')
+			{
+				sl=sl+"<option>"+mpcity[0]+"</option><option>"+mpcity[1]+"</option><option>"+mpcity[2]+"</option><option>"+mpcity[3]+"</option><option>"+mpcity[4]+"</option><option>"+mpcity[5]+"</option>";	
+			}
+			else if(a=='maharashtra')
+			{
+				sl=sl+"<option>"+maha[0]+"</option><option>"+maha[1]+"</option><option>"+maha[2]+"</option><option>"+maha[3]+"</option><option>"+maha[4]+"</option><option>"+maha[5]+"</option>";	
+			}
+			else if(a=='rajasthan')
+			{
+				sl=sl+"<option>"+raj[0]+"</option><option>"+raj[1]+"</option><option>"+raj[2]+"</option><option>"+raj[3]+"</option><option>"+raj[4]+"</option><option>"+raj[5]+"</option>";	
+			}
+			else if(a=='kerala')
+			{
+				sl=sl+"<option>"+ker[0]+"</option><option>"+ker[1]+"</option><option>"+ker[2]+"</option><option>"+ker[3]+"</option><option>"+ker[4]+"</option><option>"+ker[5]+"</option>";	
+			}
+			else if(a=='tamilnadu')
+			{
+				sl=sl+"<option>"+tamil[0]+"</option><option>"+tamil[1]+"</option><option>"+tamil[2]+"</option><option>"+tamil[3]+"</option><option>"+tamil[4]+"</option><option>"+tamil[5]+"</option>";	
+			}
+			sl=sl+"</select>";
+			document.getElementById('para').innerHTML=sl;
+		}
+	</script>
+
+</head>
+<body style="background-color: yellowgreen;">
+	<center>	
+		<select onchange="demo();" id="s1">
+			<option>slect state</option>
+			<option value="uttarpradesh">uttar pradesh</option>
+			<option value="madhyapradesh">madhya pradesh</option>
+			<option value="maharashtra">maharashtra</option>
+			<option value="rajasthan">rajasthan</option>
+			<option value="kerala">kerala</option>
+			<option value="tamilnadu">tamil nadu</option>
+		</select><br><br>
+		<p id="para"></p>
+
+	</center>
+
+</body>
+</html>

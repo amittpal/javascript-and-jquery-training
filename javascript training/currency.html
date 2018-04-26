@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			window.onerror=function(msg,url,line,col)
+			{
+				//anonymous method
+				alert("Message Error:"+msg+"File Location:"+url+"Line:"+line+"Column:"+col);
+			}
+			function demo()
+			{
+				var dol=document.getElementById('dl').value;
+				var rup=dol*60;
+				document.getElementById('rp').value=rup;
+			}
+			function demo1()
+			{
+				var rpp=document.getElementById('rp').value;
+				var rppppp=rpp/60;
+				document.getElementById('dl').value=rppppp;
+			}
+
+		</script>
+	</head>
+	<body>
+		<input type="number" placeholder="enter dollar to convert in rupee" id="dl"><br><br>
+		<input type="button" value="DOLLAR TO INR" onclick="demo()">
+		<input type="button" value="INR TO DOLLAR" onclick="demo1()"><br><br>
+		<input type="number" placeholder="rupee" id="rp">
+	</body>
+</html>

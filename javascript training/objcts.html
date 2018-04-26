@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	function demo()
+	{
+	var na=document.getElementById("a").value;
+	var student1={name:na,age:25,mob:9889200362,fullname:function()
+		{
+			return this.name+" "+this.mob;
+		}};
+	alert(student1.name);
+	alert(student1.age);
+	alert(student1.mob);
+	alert(student1.fullname());
+}
+</script>
+<body>
+	<input type="text" id="a">
+	<input type="button" onclick="demo()" value="press here">
+</body>

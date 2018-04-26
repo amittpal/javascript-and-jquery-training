@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo() 
+		{
+			var a=document.getElementById('sname').value;
+			var b=Number(document.getElementById('m1').value);
+			var c=Number(document.getElementById('m2').value);
+			var d=Number(document.getElementById('m3').value);
+			var e=Number(document.getElementById('m4').value);
+			var f=Number(document.getElementById('m5').value);
+			document.getElementById('nm').value=a;
+			var p=b+c+d+e+f;
+			document.getElementById('totalmarks').value=p;
+			var pr=(p/500)*100;
+			document.getElementById('prcent').value=pr.toFixed(3);
+
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="sname" placeholder="enter sudent name"><br><br>
+	<input type="number" id="m1" placeholder="enter marks"><br><br>
+	<input type="number" id="m2" placeholder="enter marks"><br><br>
+	<input type="number" id="m3" placeholder="enter marks"><br><br>
+	<input type="number" id="m4" placeholder="enter marks"><br><br>
+	<input type="number" id="m5" placeholder="enter marks"><br><br>
+	<input type="button" onclick="demo()" value="press here"><br><br> 
+	student name :<input type="text" id="nm"><br><br>
+
+	total marks obtained out of 500:<input type="number" id="totalmarks"><br><br>
+	percentage:<input type="number" id="prcent">
+
+</body>
+</html>

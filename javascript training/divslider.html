@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var texts=["softpro india","lucknow","uttar pradesh","AMitt","VARANASI"];
+		var count=0;
+		function mvtext()
+		{
+			document.getElementById('a').innerHTML=texts[count];
+			count++;
+			if(count==texts.length)
+			{
+				count=0;
+			}
+			window.setTimeout("mvtext()",1500);
+		}
+		var pics=["jsimg/1.jpg","jsimg/2.jpg","jsimg/3.jpg","jsimg/4.jpg"];
+		var index=0;
+		function imgslider()
+		{
+			document.getElementById('im').src=pics[index];
+			index++;
+			if(index==pics.length)
+			{
+				index=0;
+			}
+			window.setTimeout("imgslider()",1500);
+		}		
+	</script>
+	<style type="text/css">
+	#outer{height: 500px;width: 1300px;border: 5px dotted red;}
+	#a{height: 500px;width: 650px;float: left;text-align: center;font-size: 150px;background-color: yellowgreen;}
+	#b{height: 500px;width: 650px;float: right;}		
+	</style>
+</head>
+<body onload="mvtext();imgslider();"><center>
+	<div id="outer">
+		<div id="a"></div>
+		<div id="b"><img src="jsimg/5.jpg" id="im"></div>
+		
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var user1=Number(document.getElementById('n1').value);
+			var user2=Number(document.getElementById('n2').value);
+			class abc
+			{
+				constructor(a,b)
+				{
+					this.num1=a;
+					this.num2=b;
+				}
+				add()
+				{
+					var res=this.num1+this.num2;
+					return res;
+				}
+			}
+			var obj=new abc(user1,user2);
+			var fres=obj.add();
+			document.getElementById('para').innerHTML="<h1>"+"addition ="+fres+"</h1>";
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="n1"><br><br>
+	<input type="number" id="n2"><br><br>
+	<input type="button" value="press here to add" onclick="demo()"><br><br>
+	<p id="para"></p>
+
+</body>
+</html>

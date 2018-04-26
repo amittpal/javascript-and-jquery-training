@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+var imgno=1;
+function moveslider()
+{
+if(imgno>4)
+imgno=1;
+document.getElementById("image").src="images/"+imgno+".jpg";
+imgno++;
+window.setTimeout("moveslider()",2000);
+}
+
+</script>
+</head>
+<body onload="moveslider()">
+<img id="image" height="250px" width="800px"/>
+
+</body>
+</html> 

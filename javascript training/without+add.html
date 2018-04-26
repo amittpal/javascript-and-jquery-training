@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+
+		function demo1(x,y) {
+			var a,b,c;
+			a=Number(document.getElementById("a").value);
+			b=Number(document.getElementById("b").value);
+			
+    if (b == 0)
+        return x;
+    else
+        return Add( a ^ b, (a & b) << 1);
+
+		}
+function demo()
+{
+	var z=demo1();
+}
+
+	</script>
+
+</head>
+<body>
+	<input type="number" id="a"><br>
+	<input type="number" id="b"><br>
+	<button onclick="demo()">add no without </button>
+	<input type="number" id="c">
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+
+		
+		function calculate(x,y,op) {
+			var x=parseInt(x);
+			var y=parseInt(y);
+			var res;
+			switch(op)
+			{
+				case "+":
+				res=x+y;
+				break;
+				case "-":
+				res =x-y;
+				break;
+				case "*":
+				res =x*y;
+				break;
+				case "/":
+				res =x/y;
+				break;
+
+			}
+			document.getElementById("para").innerHTML=res;
+		}
+	</script>
+</head>
+<body>
+<input type="number" id="txt1"><br>
+<input type="number" id="txt2"><br><br>
+<button onclick="calculate(txt1.value,txt2.value,this.value)" value="+">+</button>
+<button onclick="calculate(txt1.value,txt2.value,this.value)" value="-">-</button>
+<button onclick="calculate(txt1.value,txt2.value,this.value)" value="*">*</button>
+<button onclick="calculate(txt1.value,txt2.value,this.value)" value="/">/</button><br><br>
+<p id="para"></p>
+
+</body>
+</html>

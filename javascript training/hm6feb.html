@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function factt()
+		{
+		var num=Number(document.getElementById('txt').value);
+		class fact
+		{
+			constructor(f)
+			{
+				this.factorial=f;
+			}
+			facto()
+			{
+				var a=this.factorial;
+				var fq=1;
+				while(a!=0)
+				{
+					fq=fq*a;
+					a--;
+				}
+				return fq;
+			}
+		}
+		var obj=new fact(num);
+		var res=obj.facto();
+		document.getElementById('para').innerHTML="<h1>"+"factorial = "+res+"</h1>";
+	}
+		
+	</script>
+</head>
+<body>
+	<input type="number" id="txt"><br><br>
+	<input type="button" value="press here" onclick="factt()"><br><br>
+	<p id="para"></p>
+
+</body>
+</html>

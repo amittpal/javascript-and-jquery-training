@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function bp() 
+				{
+					
+			var productitem=[{pname:"mouse",price:35000,productimg:"img/2.jpg",qty:360},{pname:"computer",price:32000,productimg:"img/3.jpg",qty:560},{pname:"lappy",price:24480,productimg:"img/4.jpg",qty:0}];
+			
+						
+						//creating table to view details of products...
+						var tab="<table border='3' style='height:400px;width:900px;'><tr> <th>sr. no. </th><th>product name</th><th>price</th><th>product photo</th><th>quantity</th> </tr>";
+						for(var i=0;i<productitem.length;i++)
+						{
+							if(productitem[i].qty!=0)
+							{
+								tab=tab+"<tr style='background:red;text-align:center;color:black;'><td>"+(i+1)+"</td><td>"+productitem[i].pname+"</td><td>"+productitem[i].price+"</td><td><img src="+productitem[i].productimg+" style='height:100px;width:100px;border-radius:15px;border:2px solid blue;'/></td><td>"+productitem[i].qty+"</td></tr>";
+							}
+							else
+							{
+								tab=tab+"<tr style='background:yellow;text-align:center;color:black;'><td>"+(i+1)+"</td><td>"+productitem[i].pname+"</td><td>"+productitem[i].price+"</td><td><img src="+productitem[i].productimg+" style='height:100px;width:100px;border-radius:15px;border:2px solid blue;'/></td><td>"+productitem[i].qty+"</td></tr>";
+							}
+							
+
+						}
+						tab=tab+"</table>";
+						document.getElementById('Products').innerHTML=tab;
+						
+					}
+	</script>
+</head>
+<body><center>
+	
+	<input type="button" value="press here" onclick="bp()"><br><br>
+	<p id="Products"></p>
+</center>
+</body>
+</html>

@@ -1,0 +1,7 @@
+1>>by using class find factorial
+2>>check no. prime by using external class
+3>>add two no. by using constructor
+4>>create a div and make 2 part of div first part move slider and
+second with text slider together.
+5>>dvelop a webpage of html by using javascript to print 100 no
+into div by using class.

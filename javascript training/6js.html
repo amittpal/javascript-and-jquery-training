@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demotext()
+		{
+		var a;
+		a=document.getElementById("a").innerHTML;
+		document.getElementById("b").innerHTML=a;
+		}
+		function demohtml()
+		{
+		var a;
+		a=document.getElementById("a").innerText;
+		document.getElementById("b").innerHTML=a;
+		}
+	</script>
+	<style type="text/css">
+		#a{height: 150px;width: 300px;border: 1px solid red;}
+		#b{height: 150px;width: 300px;border: 1px solid blue;}
+	</style>
+</head>
+<body>
+	<div id="a">
+		<img src="img.jpg">
+		SOFTPRO INDIA
+		
+	</div>
+	<br>
+	<button onclick="demotext()">click to show content of upper box into below box</button><br><br>
+	<button onclick="demohtml()">click to show content of upper box into below box</button><br><br>
+
+	<div id="b"></div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+var i=0;
+var arr=['butterfly.jpg','city.jpg','desert.jpg','flower.jpg','flowers.jpg','night.jpg','sunset.jpg','surf.jpg','tiger.jpg','water.jpg','water.jpg'];
+function moveslider()
+{
+if(i==arr.length)
+i=0;
+document.getElementById("image").src="imgs/"+arr[i];
+i++;
+window.setTimeout("moveslider()",200);
+}
+
+</script>
+</head>
+<body onload="moveslider()">
+<img id="image" height="250px" width="800px"/>
+
+</body>
+</html> 

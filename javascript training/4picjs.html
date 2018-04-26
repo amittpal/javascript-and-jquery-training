@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo1(x)
+		{
+			var a=document.getElementById("im");
+			switch(x)
+			{
+			case "change1":
+			a.src="img/6.jpg";
+			break;
+			case "change2":
+			a.src="img/5.jpg";
+			break;
+			case "change3":
+			a.src="img/4.jpg";
+			break;
+			case "change4":
+			a.src="img/3.jpg";
+			break;
+			}
+		}
+
+
+	</script>
+	<style type="text/css">
+		#outer{height: 400px;width: 800px;border: 2px solid red;margin: 0px auto;}
+		
+		#btn{height: 50px;width: 300px;margin-left: 220px;}
+	</style>
+	</head>
+<body>
+
+	<div id="outer">
+			<div id="a"><img src="img/1.jpg" id="im"></div><br>
+		<div id="btn">
+			<input type="button" value="change1" id="b1" onclick="demo1(this.value)">
+			<input type="button" value="change2" id="b2" onclick="demo1(this.value)">
+			<input type="button" value="change3" id="b3" onclick="demo1(this.value)">
+			<input type="button" value="change4" id="b4" onclick="demo1(this.value)">
+		</div>
+	</div>
+</body>
+</html>

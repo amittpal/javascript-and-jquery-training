@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			for(var i=1;i<=5;i++)
+			{
+				for(var j=1;j<=5;j++)
+				{
+					var dv1=document.getElementById('dv1');
+					dv1.innerHTML+="*"+" ";
+					
+
+				}
+				document.getElementById("dv1").innerHTML+="<br>";
+			}
+		}
+	</script>
+	<style type="text/css">
+		#dv1{height: 200px;width: 400px;border: 2px solid red;}
+	</style>
+	
+</head>
+<body>
+	<div id="dv1"></div><br>
+	<input type="button" onclick="demo()" value="press here">
+
+</body>
+</html>
+
+<!-- substr()
+substring()
+indexOf()
+compare()
+toLowerCase()
+ to UpperCase()
+ length
+ trim()
+ valueOf()
+ split()-->

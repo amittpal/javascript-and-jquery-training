@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var r,res;
+			r=parseInt(document.getElementById("t1").value);
+				res=3.14*r*r;
+				//alert("area of circle is="+res.toFixed(5));
+				document.getElementById("t2").value=res;
+				document.getElementById("dv").innerHTML+="area of circle is  <b>"+res+"</b>";
+
+				document.getElementById("dv1").innerText+=res;
+
+		}
+
+	</script>
+</head>
+<body>
+	<input type="number" name="" placeholder="radius" id="t1">enter radius<br>
+	<input type="text" name="" id="t2"><br>
+	<button onclick="demo()">find area of circle</button>
+
+	<div id="dv1"><br>
+		<div id="dv"></div>
+	</div>
+
+</body>
+</html>

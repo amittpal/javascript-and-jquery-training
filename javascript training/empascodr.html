@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var a,b,c,d,e;
+			a=document.getElementById('a').value;
+			b=document.getElementById('b').value;
+			c=document.getElementById('c').value;
+			d=document.getElementById('d').value;
+			e=document.getElementById('e').value;
+			var arr=new Array(5);
+			arr[0]=a;
+			arr[1]=b;
+			arr[2]=c;
+			arr[3]=d;
+			arr[4]=e;
+			res=arr.sort();
+			document.getElementById('txt').value=res;
+		}
+
+
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="a" placeholder="enter name"><br><br>
+		<input type="text" id="b" placeholder="enter name"><br><br>
+		<input type="text" id="c" placeholder="enter name"><br><br>
+		<input type="text" id="d" placeholder="enter name"><br><br>
+		<input type="text" id="e" placeholder="enter name"><br><br>
+		<input type="button" value="press here" onclick="demo()"><br><br>
+		<textarea id="txt" rows="20" cols="50" placeholder="employee name in ascending order"></textarea>
+	</form>
+
+</body>
+</html>

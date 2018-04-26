@@ -1,0 +1,60 @@
+<!-- program to find product from a table-->
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo()
+		{
+			var pitem=[{pname:"mouse",price:3544,pic:"img/2.jpg",qty:36},{pname:"keyboard",price:3544,pic:"img/3.jpg",qty:36},{pname:"speaker",price:3544,pic:"img/4.jpg",qty:0},{pname:"monitor",price:3544,pic:"img/5.jpg",qty:36},{pname:"projector",price:3544,pic:"img/6.jpg",qty:36},{pname:"processor",price:3544,pic:"img/1.jpg",qty:36}];
+			var tab="<table border='3' style='height:300px;width:800px;'><tr><th>serial no.</th><th>product name</th><th>price</th><th>photo</th><th>quantity</th></tr>";
+			for(var i=0;i<pitem.length;i++)
+			{
+
+				if(pitem[i].qty!=0)
+				{
+					tab=tab+"<tr style='background:red;color:white;text-align:center;'><td>"+(i+1)+"</td><td>"+pitem[i].pname+"</td><td>"+pitem[i].price+"</td><td><img src="+pitem[i].pic+" style='height:100px;width:100px;border-radius:50px;'</td><td>"+pitem[i].qty+"</td></tr>";
+				}
+				else
+				{
+					tab=tab+"<tr style='background:yellow;color:black;text-align:center;'><td>"+(i+1)+"</td><td>"+pitem[i].pname+"</td><td>"+pitem[i].price+"</td><td><img src="+pitem[i].pic+" style='height:100px;width:100px;border-radius:50px;'</td><td>"+pitem[i].qty+"</td></tr>";
+				}
+			}
+			tab=tab+"</table>";
+			document.getElementById('para').innerHTML=tab;
+		}
+		function find()
+		{
+			var pitem=[{pname:"mouse",price:3544,pic:"img/2.jpg",qty:36},{pname:"keyboard",price:3544,pic:"img/3.jpg",qty:36},{pname:"speaker",price:3544,pic:"img/4.jpg",qty:0},{pname:"monitor",price:3544,pic:"img/5.jpg",qty:36},{pname:"projector",price:3544,pic:"img/6.jpg",qty:36},{pname:"processor",price:3544,pic:"img/1.jpg",qty:36}];
+			var txt=document.getElementById('txt').value;
+			var tab="<table border='3' style='height:300px;width:800px;'><tr><th>serial no.</th><th>product name</th><th>price</th><th>photo</th><th>quantity</th></tr>";
+			for(var i=0;i<pitem.length;i++)
+			{
+
+				if(pitem[i].pname==txt)
+				{
+					tab=tab+"<tr style='background:red;color:white;text-align:center;'><td>"+(i+1)+"</td><td>"+pitem[i].pname+"</td><td>"+pitem[i].price+"</td><td><img src="+pitem[i].pic+" style='height:100px;width:100px;border-radius:50px;'</td><td>"+pitem[i].qty+"</td></tr>";
+				}
+				else
+				{
+					var msg="there is no such item in our list";
+					document.getElementById('p1').innerHTML="<h2>"+msg+"</h2>";
+				}
+			}
+			tab=tab+"</table>";
+			document.getElementById('para').innerHTML=tab;
+		}
+
+	</script>
+</head>
+<body>
+	<center>
+		
+		<input type="button" value="show table" onclick="demo()"><br><br>
+		<p id="para"></p><br><br>
+		<input type="text" id="txt" placeholder="enter product name to find"><br><br>
+		<input type="button" value="find product" onclick="find()"><br><br>
+		<p id="p1"></p>
+	</center>
+
+</body>
+</html>

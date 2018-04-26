@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function demo() {
+		
+		var a=Number(document.getElementById("nm1").value);
+		var b=Number(document.getElementById("nm2").value);
+		var c=Number(document.getElementById("nm3").value);
+		var d=Number(document.getElementById("nm4").value);
+		var e=Number(document.getElementById("nm5").value);
+		var f=Number(document.getElementById("nm6").value);
+		var g=Number(document.getElementById("nm7").value);
+		var h=Number(document.getElementById("nm8").value);
+		var i=Number(document.getElementById("nm9").value);
+		var j=Number(document.getElementById("nm10").value);
+		var result=(a+b+c+d+e+f+g+h+i+j)/10;
+		document.getElementById("res").value=result;
+	}
+	</script>
+</head>
+<body>
+	<form action="" method="get" name="">
+		<input type="number" id="nm1" placeholder="enter number"><br>
+		<input type="number" id="nm2" placeholder="enter number"><br>
+		<input type="number" id="nm3" placeholder="enter number"><br>
+		<input type="number" id="nm4" placeholder="enter number"><br>
+		<input type="number" id="nm5" placeholder="enter number"><br>
+		<input type="number" id="nm6" placeholder="enter number"><br>
+		<input type="number" id="nm7" placeholder="enter number"><br>
+		<input type="number" id="nm8" placeholder="enter number"><br>
+		<input type="number" id="nm9" placeholder="enter number"><br>
+		<input type="number" id="nm10" placeholder="enter number"><br>
+		<input type="button" value="calculate average" onclick="demo()"><br>
+		<input type="number" id="res" placeholder="average of 10 numbers"><br>
+	</form>
+
+</body>
+</html>
